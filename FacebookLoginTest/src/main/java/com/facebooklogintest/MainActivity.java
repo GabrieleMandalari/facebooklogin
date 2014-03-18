@@ -15,6 +15,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import com.facebook.Request;
 import com.facebook.Response;
@@ -151,6 +152,7 @@ public class MainActivity  extends FragmentActivity {
         }
 
         private void onSessionStateChange(Session session, SessionState state, Exception exception) {
+            final TextView displayName = (TextView) findViewById(R.id.name);
             if (state.isOpened()) {
                 Log.i(TAG, "Logged in...");
                 // Request user data and show the results
@@ -160,11 +162,13 @@ public class MainActivity  extends FragmentActivity {
                     public void onCompleted(GraphUser user, Response response) {
                         if (user != null) {
                             String name = user.getName();
+                            displayName.setText("Hello "+name);
                             Log.i(TAG, name);
                         }
                     }
                 });
             } else if (state.isClosed()) {
+                displayName.setText("");
                 Log.i(TAG, "Logged out...");
             }
         }

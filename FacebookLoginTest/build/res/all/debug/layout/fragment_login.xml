@@ -13,5 +13,14 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/name"
+        android:layout_above="@+id/authButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="86dp" />
+
 </RelativeLayout>
 <!-- From: file:/Users/Lele/AndroidStudioProjects/FacebookLoginTest/FacebookLoginTest/src/main/res/layout/fragment_login.xml -->

@@ -309,7 +309,7 @@ int id action_context_bar 0x7f07001f
 int id action_menu_divider 0x7f070017
 int id action_menu_presenter 0x7f070018
 int id action_mode_close_button 0x7f070026
-int id action_settings 0x7f070054
+int id action_settings 0x7f070055
 int id activity_chooser_view_content 0x7f070027
 int id always 0x7f07000f
 int id authButton 0x7f070053
@@ -353,6 +353,7 @@ int id large 0x7f070015
 int id listMode 0x7f070001
 int id list_item 0x7f07002b
 int id middle 0x7f07000b
+int id name 0x7f070054
 int id never 0x7f07000d
 int id none 0x7f070009
 int id normal 0x7f070000
