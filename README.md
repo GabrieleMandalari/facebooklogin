@@ -1,5 +1,4 @@
 Login with facebook in Android with FACEBOOK SDK 3.7
-=============
 
 A simple way to login with Facebook in Android with Android Studio, fragment and Facebook SDK 3.7
 
